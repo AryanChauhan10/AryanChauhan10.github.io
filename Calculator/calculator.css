@@ -1,0 +1,172 @@
+  body{
+    background-color:gray;
+    display:flex;
+    justify-content:center;
+  }
+  #ultrasupdiv{
+    background-color:rgb(32, 29, 29);
+    border:hidden 2px white;
+    border-radius:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:400px;
+    width:400px;
+  }
+  #calculator{
+            background-color:black;
+            display:grid;
+            grid-template-column:50px 50px 50px 50px;
+            grid-template-row:auto auto auto auto auto auto;
+            border:black solid 1px;
+            height:200px;
+            width:200px;
+            padding:25px;
+            border-radius:30px;
+            gap:5px; 
+
+        }
+        #dis{
+            height:75%;
+            width:95%;
+            border:black solid 1px;
+            border-radius:10px;
+        }
+        #screen{
+            grid-column:1/5;
+            grid-row:1/2;
+            height:100%;
+            width:100%;
+
+        }
+        .perc{
+            grid-column:1/2;
+            grid-row:2/3;
+        }
+        .mul{
+            grid-column:2/3;
+            grid-row:2/3;
+        }
+        .divide{
+            grid-column:3/4;
+            grid-row:2/3;
+        }
+        .seven{
+            grid-column:1/2;
+            grid-row:3/4;
+        }
+        .eight{
+            grid-column:2/3;
+            grid-row:3/4;
+        }
+        .nine{
+            grid-column:3/4;
+            grid-row:3/4;
+        }
+        .plus{
+            grid-column:4/5;
+            grid-row:2/4;
+        }
+        .four{
+            grid-column:1/2;
+            grid-row:4/5;
+        }
+        .five{
+            grid-column:2/3;
+            grid-row:4/5;
+        }
+        .six{
+            grid-column:3/4;
+            grid-row:4/5;
+        }
+        .minus{
+            grid-column:4/5;
+            grid-row:4/6;
+        }
+        .one{
+            grid-column:1/2;
+            grid-row:5/6;
+        }
+        .two{
+            grid-column:2/3;
+            grid-row:5/6;
+        }
+        .three{
+            grid-column:3/4;
+            grid-row:5/6;
+        }
+        .dot{
+            grid-column:1/2;
+            grid-row:6/7;
+        }
+        .zero{
+            grid-column:2/4;
+            grid-row:6/7;
+        }
+        .equal{
+            grid-column:4/5;
+            grid-row:6/7;
+        }
+        button{
+            height:100%;
+            width:100%;
+            border:solid 3px black;
+            border-radius:20%;
+            background-color:rgb(214, 212, 212);
+
+        }
+        #supdiv{
+            height:250px;
+            width:250px;
+            background-color:black;
+            border:solid 4px black;
+            border-radius:30px;
+            box-shadow:0 0 10px white,0 0 20px white,0 0 30px white;
+        } 
+        button:hover{
+            transform:scale(1.2);
+            transition:transform 1s;
+            background-color:white;
+            border:solid 1px white;
+            box-shadow:0 0 5px white,0 0 10px white;
+        }
+        .calc{
+            background-color:purple;
+            border:solid 1px purple;
+
+        }
+        .calc:hover{
+            transform:scale(1.2);
+            transition:transform 1s;
+            background-color:purple;
+            box-shadow:0 0 5px purple, 0 0 10px purple, 0 0 15px purple;
+            border:solid 1px purple;
+        }
+        .zeroo:hover{
+            transform:scale(1.2);
+            transition:transform 1s;
+            background-color:gray;
+            border:solid 1px gray;
+            box-shadow:0 0 5px gray, 0 0 10px gray, 0 0 15px gray;
+        }
+        .dott:hover{
+            transform:scale(1.2);
+            transition:transform 1s;
+            background-color:gray;
+            border:solid 1px gray;
+            box-shadow:0 0 5px gray, 0 0 10px gray, 0 0 15px gray;
+        }
+        .pluss:hover{
+            transform:scale(1.2);
+            transition:transform 1s;
+            background-color:gray;
+            border:solid 1px gray;
+            box-shadow:0 0 5px gray, 0 0 10px gray, 0 0 15px gray;
+        }
+        .minuss:hover{
+            transform:scale(1.2);
+            transition:transform 1s;
+            background-color:gray;
+            border:solid 1px gray;
+            box-shadow:0 0 5px gray, 0 0 10px gray, 0 0 15px gray;
+        }

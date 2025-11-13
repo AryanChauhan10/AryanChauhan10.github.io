@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" href="calculator.css">
+    <script>
+        function display(a){
+            document.getElementById('dis').value+=a;
+        }
+        function allclear(){
+            document.getElementById('dis').value="";
+        }
+        function cal()
+        {
+            x=eval(document.getElementById('dis').value)
+            document.getElementById('dis').value=x
+        }
+    </script>
+</head>
+<body> 
+<div id="ultrasupdiv">
+    <div id="supdiv">
+        <div id="calculator">
+            <div id="screen"><input type="text" id="dis"></div>
+                <div class="perc"><button onclick="allclear()">AC</button></div>
+                <div class="mul"><button onclick="display('*')">*</button></div>
+                <div class="divide"><button onclick="display('/')">/</button></div>
+                <div class="seven"><button onclick="display(7)">7</button></div>
+                <div class="eight"><button onclick="display(8)">8</button></div>
+                <div class="nine"><button onclick="display(9)">9</button></div>
+                <div class="plus"><button class="pluss" onclick="display('+')">+</button></div>
+                <div class="four"><button onclick="display(4)">4</button></div>
+                <div class="five"><button onclick="display(5)">5</button></div>
+                <div class="six"><button onclick="display(6)">6</button></div>
+                <div class="minus"><button class="minuss" onclick="display('-')">-</button></div>
+                <div class="one"><button onclick="display(1)">1</button></div>
+                <div class="two"><button onclick="display(2)">2</button></div>
+                <div class="three"><button onclick="display(3)">3</button></div>
+                <div class="dot"><button class="dott" onclick="display('.')">.</button></div>
+                <div class="zero"><button class="zeroo" onclick="display(0)">0</button></div>
+                <div class="equal"><button class="calc" onclick="cal()">=</button></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aryan — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+  <header>
+    <h1>Aryan Chauhan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#login">Log-In</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-space">&nbsp</div>
+      <h2>Frontend Developer</h2>
+      <h3>Turning ideas into interactive experiences</h3>
+      <p>Hi, I’m Aryan — a passionate frontend developer who loves crafting beautiful, functional, and responsive web applications using HTML, CSS, and JavaScript. I focus on detail, performance, and user experience.</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+      <div class="hero-space"></div>
+    </div>
+    <div class="hero-photo">
+      <img src="" alt="Aryan Photo">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m a frontend developer who believes in the power of design and code working together. My goal is to build digital products that not only function seamlessly but also make people feel something when they use them.</p>
+  </section>
+
+
+
+
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <img src="images/cal.png" alt="Calculator img" style="height: 250px; width:250px; border:hidden 2px; border-radius:10px;">
+        <h3><i class="fas fa-calculator" style="font-size:40px;color:#27ae60;"></i>Calculator</h3>
+        <button onclick="window.open('/calculator/calculator.html', '_blank')">View</button>
+      </div>
+
+      <div class="project">
+        <img src="images/Screenshot 2025-11-12 195440.png" alt="weather img" style="height:250px; width:250px; border:hidden 2px; border-radius:10px;">
+        <h3><i class="fas fa-cloud-sun" style="font-size:40px;color:#f39c12;"></i>Weather App</h3>
+        <p></p>
+        <button onclick="window.open('/Weather/weather.html', '_blank')">View</button>
+      </div>
+
+      <div class="project">
+        <img src="images/Screenshot 2025-11-12 205725.png" alt="game img" style="height:250px; width:250px; border:hidden 2px; border-radius:10px;">
+        <h3><i class="fas fa-hammer" style="font-size:40px;color:#e74c3c;"></i>Whack-the-Mole</h3>
+        <p></p>
+        <button onclick="window.open('/whack/whack.html', '_blank')">View</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Have a project in mind or just want to say hi? Let’s connect!</p>
+    <div class="g-cont">
+      <div class="gmail">
+        <p>Email</p>
+        <a href="aryanrana1890@gmail.com" class="nav-link" style="text-transform: none; font-size: 1rem;">aryanChauhan@example.com</a>
+      </div>
+      <div class="git">
+        <p>GitHub</p>
+        <a href="#" class="nav-link" style="text-transform: none; font-size: 1rem;">@aryanchauhanCode</a>
+      </div>
+    </div>
+    <!-- <p>Email: <a href="mailto:aryanrana1890@gmail.com" style="color:#aaa;">aryanrana1890@gmail.com</a></p> -->
+  </section>
+
+  <section id="login" class="login-background">
+        <div class="login-card">
+            <h3>Sign In</h3>
+            <p>Keep it all together and you'll be fine.</p>
+
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email or Phone</label>
+                    <input type="text" id="email" name="email" required="" class="login-input">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required="" class="login-input">
+                    <a href="#" class="show-password-link">Show</a>
+                </div>
+
+                <a href="#" class="forgot-password-link">Forgot Password</a>
+
+
+                <button type="submit" class="gradient-button glow-shadow" style="width: 100%; margin-top: 2rem;">
+                    Sign In
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
